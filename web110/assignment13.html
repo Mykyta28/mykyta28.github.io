@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 13</title>
+</head>
+<body>
+  <h1>Mykyta Semenii</h1>
+  <hr>
+  <h2>Complete one or more of the following tutorials</h2>
+  <h3>W3Schools: SQL Tutorial, SQLZOO: SQL Tutorial, SQLBolt: Learn SQL, TutorialsPoint: SQL, Khan Academy: Intro to SQL</h3>
+  <p>
+    SQL, or Structured Query Language, is a language designed to allow both technical<br>
+    and non-technical users query, manipulate, and transform data from a relational database.<br>
+    And due to its simplicity, SQL databases provide safe and scalable storage for millions of websites and mobile applications.
+    I have read all articles and have done all quizzes. I have learned how to use all sql queries to retrieve, update and delete certain elements from database.
+  </p>
+  <h2>Practice writing multiple-table SELECT statements using W3Schools SQL TryIt Editor</h2>
+  <p>Select all customers</p>
+  <li>select * from Customers</li>
+  <p>Select only customers ID and name field</p>
+  <li>select CustomerId, CustomerName from Customers</li>
+  <p>Select customer name, last name, address, city, postal code from the United Kingdom (WHERE field = 'value')</p>
+  <li>select Name, LastName, address, postal code from Customers</li>
+  <li>where Country = 'UK'</li>
+  <p>Insert a new record in the Customers table.</p>
+  <li>insert into Customers (Name, LastName, address, city, postalCode, state) value ('Bryin', 'Rostger', '3243 misty woods rd', 'Buffalo Grove', '60089', 'IL');</li>
+  <p>Select and count all customers in database</p>
+  <li>select count(*) frome Customers</li>
+  <p>Select contact name and customer name for all customers, sorted alphabetically by contact name (ORDER BY field)</p>
+  <li>select * from Customers order by ContactName</li>
+  <p>Count the number of customers from each country (GROUP BY).</p>
+  <li>select count(CustomerID), Country from Customers group by Country</li>
+  <p>Count the number of customers from each country and sort the list in descending order by count and ascending order by country in case of a tie (GROUP BY, ORDER BY)</p>
+  <li>select count(CustomerID), Country from Customers group by Country order by count(CustomerID) desc, Country asc</li>
+  <p>Count the number of customers from each country and sort the list in descending order by count and ascending order by country in case of a tie, listing only those countries with more than 10 customers (GROUP BY, HAVING, ORDER BY).</p>
+  <li>select count(CustomerID), Country from Customers group by Country order by count(CustomerID) desc, Country asc having count(CustomerID) > 10</li>
+</body>
+</html>
