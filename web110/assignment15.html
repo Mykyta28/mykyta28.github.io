@@ -7,97 +7,107 @@
     <title>Assignment 15</title>
 </head>
 <body>
+
   <h1 id="header"></h1>
   <p id="date"></p>
+
   <script>
     document.getElementById('header').innerHTML = "Mykyta Semenii";
   </script>
+
   <script>
-  document.getElementById("text").innerHTML = Date();
+  document.getElementById("date").innerHTML = Date();
 </script>
   
-  <convas id="ex" width="300" height="300">
+<canvas id="example" width="360" height="240">
     This text is displayed if your browser does not support HTML5 Canvas.
-  </convas>
+  </canvas>
   
   <script>
-  var ex = document.getElementById("ex");
-  var context = example.getContext("2d");
-
-  // Set stroke and fill to blue
-  context.strokeStyle = "blue";
-  context.fillStyle = "blue";
-
-  // Select font, alignment, draw text, and fill characters
-  context.font = "36px sans-serif";
-  context.textAlign="center";
-  context.strokeText("HTML5 Canvas", 160, 50);
-  context.fillText("HTML5 Canvas", 160, 50);
-</script>
+    var example = document.getElementById("example");
+    var context = example.getContext("2d");
   
-  <canvas id="ex1" width="360" height="240">
-  This text is displayed if your browser does not support HTML5 Canvas.
-</canvas>
-
-<script>
-  var ex1 = document.getElementById("ex1");
-  var context = example.getContext("2d");
-
-  // Draw a line, width 4
-  context.lineWidth = 4;
-  context.moveTo(30, 65);
-  context.lineTo(290, 65);
-  context.stroke();
-</script>
+    // Set stroke and fill to blue
+    context.strokeStyle = "blue";
+    context.fillStyle = "blue";
   
-  <canvas id="ex2" width="360" height="240">
-  This text is displayed if your browser does not support HTML5 Canvas.
-</canvas>
+    // Select font, alignment, draw text, and fill characters
+    context.font = "36px sans-serif";
+    context.textAlign="center";
+    context.strokeText("HTML5 Canvas", 160, 50);
+    context.fillText("HTML5 Canvas", 160, 50);
+  </script>
 
-<script>
-  var ex2 = document.getElementById("ex2");
-  var context = example.getContext("2d");
-
-  // Draw a red circle, radius 35
-  context.beginPath();
-  context.fillStyle = 'red';
-  context.arc(60, 140, 35, 0, 2 * Math.PI, false);
-  context.fill();
-  context.closePath();
-</script>
+<canvas id="example" width="360" height="240">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
   
-  <canvas id="ex3" width="360" height="240">
-  This text is displayed if your browser does not support HTML5 Canvas.
-</canvas>
-
-<script>
-  var ex3 = document.getElementById("ex3");
-  var context = example.getContext("2d");
-
-  // Draw a green square, side 70
-  context.beginPath();
-  context.fillStyle = 'green';
-  context.fillRect(130, 105, 70, 70);
-  context.closePath();
-</script>
+  <script>
+    var example = document.getElementById("example");
+    var context = example.getContext("2d");
   
-  <canvas id="ex4" width="360" height="240">
-  This text is displayed if your browser does not support HTML5 Canvas.
-</canvas>
+    // Draw a line, width 4
+    context.lineWidth = 4;
+    context.moveTo(30, 65);
+    context.lineTo(290, 65);
+    context.stroke();
+  </script>
 
-<script>
-  var ex4 = document.getElementById("ex4");
-  var context = example.getContext("2d");
+<canvas id="example" width="360" height="240">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
+  
+  <script>
+    var example = document.getElementById("example");
+    var context = example.getContext("2d");
+  
+    // Draw a red circle, radius 35
+    context.beginPath();
+    context.fillStyle = 'red';
+    context.arc(60, 140, 35, 0, 2 * Math.PI, false);
+    context.fill();
+    context.closePath();
+  </script>
 
-  // Draw a blue triangle
-  context.beginPath();
-  context.fillStyle = 'blue';
-  context.beginPath();
-  context.moveTo(270, 105);
-  context.lineTo(235, 175);
-  context.lineTo(310, 175);
-  context.fill();
-  context.closePath();
-</script>
+<canvas id="example" width="360" height="240">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
+  
+  <script>
+    var example = document.getElementById("example");
+    var context = example.getContext("2d");
+  
+    // Draw a green square, side 70
+    context.beginPath();
+    context.fillStyle = 'green';
+    context.fillRect(130, 105, 70, 70);
+    context.closePath();
+  </script>
+
+<canvas id="example" width="360" height="240">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
+  
+  <script>
+    var example = document.getElementById("example");
+    var context = example.getContext("2d");
+  
+    // Draw a blue triangle
+    context.beginPath();
+    context.fillStyle = 'blue';
+    context.beginPath();
+    context.moveTo(270, 105);
+    context.lineTo(235, 175);
+    context.lineTo(310, 175);
+    context.fill();
+    context.closePath();
+  </script>
+
+  <p>
+    JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.
+    In this JavaScript section I have learned how to use script tag, where it should locate, and how to use the properties to connect with elements and set some behavior to this element. 
+    Also I have learned how to use convas tag, what kind of set up’s it has and what properties. 
+    I have played around with both of them to see what results I’ll have afterwards.
+  </p>
 </body>
 </html>
