@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15</title>
+</head>
+<body>
+  <h1 id="header"></h1>
+  <p id="date"></p>
+  <script>
+    document.getElementById('header').innerHTML = "Mykyta Semenii";
+  </script>
+  <script>
+  document.getElementById("text").innerHTML = Date();
+</script>
+  
+  <convas id="ex" width="300" height="300">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </convas>
+  
+  <script>
+  var ex = document.getElementById("ex");
+  var context = example.getContext("2d");
+
+  // Set stroke and fill to blue
+  context.strokeStyle = "blue";
+  context.fillStyle = "blue";
+
+  // Select font, alignment, draw text, and fill characters
+  context.font = "36px sans-serif";
+  context.textAlign="center";
+  context.strokeText("HTML5 Canvas", 160, 50);
+  context.fillText("HTML5 Canvas", 160, 50);
+</script>
+  
+  <canvas id="ex1" width="360" height="240">
+  This text is displayed if your browser does not support HTML5 Canvas.
+</canvas>
+
+<script>
+  var ex1 = document.getElementById("ex1");
+  var context = example.getContext("2d");
+
+  // Draw a line, width 4
+  context.lineWidth = 4;
+  context.moveTo(30, 65);
+  context.lineTo(290, 65);
+  context.stroke();
+</script>
+  
+  <canvas id="ex2" width="360" height="240">
+  This text is displayed if your browser does not support HTML5 Canvas.
+</canvas>
+
+<script>
+  var ex2 = document.getElementById("ex2");
+  var context = example.getContext("2d");
+
+  // Draw a red circle, radius 35
+  context.beginPath();
+  context.fillStyle = 'red';
+  context.arc(60, 140, 35, 0, 2 * Math.PI, false);
+  context.fill();
+  context.closePath();
+</script>
+  
+  <canvas id="ex3" width="360" height="240">
+  This text is displayed if your browser does not support HTML5 Canvas.
+</canvas>
+
+<script>
+  var ex3 = document.getElementById("ex3");
+  var context = example.getContext("2d");
+
+  // Draw a green square, side 70
+  context.beginPath();
+  context.fillStyle = 'green';
+  context.fillRect(130, 105, 70, 70);
+  context.closePath();
+</script>
+  
+  <canvas id="ex4" width="360" height="240">
+  This text is displayed if your browser does not support HTML5 Canvas.
+</canvas>
+
+<script>
+  var ex4 = document.getElementById("ex4");
+  var context = example.getContext("2d");
+
+  // Draw a blue triangle
+  context.beginPath();
+  context.fillStyle = 'blue';
+  context.beginPath();
+  context.moveTo(270, 105);
+  context.lineTo(235, 175);
+  context.lineTo(310, 175);
+  context.fill();
+  context.closePath();
+</script>
+</body>
+</html>
