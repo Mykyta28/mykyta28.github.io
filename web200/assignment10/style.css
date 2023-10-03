@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: auto
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    width: 40%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form p {
+    margin-top: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 4px;
+    border: 2px solid #eee;
+    box-shadow: 0 0 15px 4px rgb(0,0,0,0.6);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 4px;
+    border: 2px solid #eee;
+    box-shadow: 0 0 15px 4px rgb(0,0,0,0.6);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}

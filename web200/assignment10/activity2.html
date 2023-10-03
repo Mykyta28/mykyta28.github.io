@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Activity 2</title>
+</head>
+<body>
+    <h2>Activity 2 (<a href="activity1.html">Back to activity 1</a>)</h2>
+    <div class="container">
+        <form id="form" method="post">
+            <div>Name of the book:
+                <input class="title" type="text" placeholder="Type..." minlength="3" maxlength="50"/>
+            </div>
+            <div>Author:
+                <input class="author" type="text" placeholder="Type..." minlength="3" maxlength="50"/>
+            </div>
+            <div>Date of the book:
+                <input class="date" type="date" placeholder="Type..." />
+            </div>
+            <div>Edition:
+                <input class="edition" type="text" placeholder="Type..."/>
+            </div>
+            <div>City:
+                <input class="city" type="text" placeholder="Type..." minlength="3" maxlength="35"/>
+            </div>
+            <div>State:
+                <input class="state" type="text" placeholder="Type..." minlength="3" maxlength="35"/>
+            </div>
+
+            <button class="btn" type="button" onclick="generateBibliography()">Add</button>
+
+            <p class="output"></p>
+        </form>
+    </div>
+    <script src="activity2.js"></script>
+</body>
+</html>
