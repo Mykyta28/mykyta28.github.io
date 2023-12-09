@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="./logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Bunk</title>
+  </head>
+  <body>
+    <!-- Top navigation -->
+    <nav>
+      <p class="welcome">Simple</p>
+      <img src="logo.png" alt="logo" class="logo" />
+      <div class="login-buttons">
+        <button class="log-in btn-style" role="button"><span class="text">Log in</span></button>
+        <button class="sign-up btn-style" role="button"><span class="text">Sign up</span></button>
+      </div>
+      <form class="login">
+        <input
+          type="text"
+          placeholder="user"
+          class="login__input login__input--user"
+        />
+        <!-- pin code -->
+        <input
+          type="password"
+          placeholder="PIN"
+          maxlength="4"
+          class="login__input login__input--pin"
+        />
+        <button class="login__btn">➡️</button>
+      </form>
+      <button class="log-out btn-style" role="button"><span class="text">Log out</span></button>
+    </nav>
+
+    <main class="app">
+      <!-- Balance -->
+      <div class="balance">
+        <div>
+          <p class="balance__label">Current balance</p>
+          <p class="balance__date">On <span class="date"></span></p>
+        </div>
+        <p class="balance__value"></p>
+      </div>
+
+      <!-- Transactions -->
+      <div class="transactions">
+        <div class="transactions__row">
+          <div class="transactions__type transactions__type--deposit">
+            
+          </div>
+          <div class="transactions__date"></div>
+          <div class="transactions__value"></div></div>
+        <div class="transactions__row">
+          <div class="transactions__type transactions__type--withdrawal"></div>
+          <!-- <div class="transactions__date">01/21/2022</div>
+          <div class="transactions__value">-256S</div> -->
+        </div>
+      </div>
+
+      <!-- Total -->
+      <div class="total">
+        <p class="total__label">Receiving</p>
+        <p class="total__value total__value--in"></p>
+        <p class="total__label">Withdraw</p>
+        <p class="total__value total__value--out"></p>
+        <p class="total__label">Procent</p>
+        <p class="total__value total__value--interest"></p>
+        <button class="btn--sort">⬇️ SORT</button>
+      </div>
+
+      <!-- Operation - Transfers -->
+      <div class="operation operation--transfer">
+        <h2>Money transition</h2>
+        <form class="form form--transfer">
+          <input type="text" class="form__input form__input--to" />
+          <input type="number" class="form__input form__input--amount" />
+          <button class="form__btn form__btn--transfer">➡️</button>
+          <label class="form__label">Receiver</label>
+          <label class="form__label">Summa</label>
+        </form>
+      </div>
+
+      <!-- Operation - Loan -->
+      <div class="operation operation--loan">
+        <h2>Request loan</h2>
+        <form class="form form--loan">
+          <input type="number" class="form__input form__input--loan-amount" />
+          <button class="form__btn form__btn--loan">➡️</button>
+          <label class="form__label form__label--loan">Summa</label>
+        </form>
+      </div>
+
+      <!-- Operation - Close -->
+      <div class="operation operation--close">
+        <h2>Close account</h2>
+        <form class="form form--close">
+          <input type="text" class="form__input form__input--user" />
+          <input
+            type="password"
+            maxlength="6"
+            class="form__input form__input--pin"
+          />
+          <button class="form__btn form__btn--close">➡️</button>
+          <label class="form__label">Name confirmation:</label>
+          <label class="form__label">PIN confirmation:</label>
+        </form>
+      </div>
+
+      <!-- account info -->
+      <p class="logout-timer">
+        <button class="info-button">&#x0069;</button>
+      </p>
+     
+    </main>
+
+    <!-- Register section -->
+    <section class="register">
+      <div>
+        <h2 class="reg-header">User registretion</h2>
+        <form class="registration-form">
+
+          <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"/>
+            <p class="error-message"></p>
+          </div>
+
+          <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"/>
+            <p class="error-message"></p>
+          </div>
+          
+          <div>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate"/>
+            <p class="error-message"></p>
+          </div>
+      
+          <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="country1">USA</option>
+                <option value="country2">China</option>
+                <option value="country2">Canada</option>
+            </select>
+            <p class="error-message"></p>
+          </div>
+
+          <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            <p class="error-message"></p>
+          </div>
+  
+          <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            <p class="error-message"></p>
+          </div>
+      
+          <div>
+            <label>Пол:</label>
+            <div class="gender-selection">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <p class="error-message"></p>
+          </div>
+      
+          <div>
+            <label for="phoneNumber">Phone number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber"/>
+            <p class="error-message"></p>
+          </div>
+      
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" />
+            <p class="error-message"></p>
+          </div>
+
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
+            <p class="error-message"></p>
+          </div>
+      
+          <div>
+            <label for="confirmPassword">Re-enter password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" />
+            <p class="error-message"></p>
+          </div>
+      
+          <div class="rull-agreements">
+              <input type="checkbox" id="agree" name="agree"/>
+              Agree with users condition
+              <p class="error-message"></p>
+          </div>
+      
+          <button class="btn-register" type="submit">Register</button>
+      </form>
+      </div>
+    </section>
+
+    <!--Modal info window-->
+    <section>
+      <div id="myModal" class="info-modal">
+        <div class="content-info">
+          <span class="info-close">&times;</span>
+          <p class="name"></p>
+          <p class="lastName"></p>
+          <p class="interest"></p>
+          <p class="email"></p>
+          <p class="tel"></p>
+          <p class="success">Successfull!</p>
+        </div>
+      </div>      
+    </section>
+    
+    <!--Modal successful window-->
+    <section>
+      <div id="myModal" class="success-modal">
+        <div class="content-success">
+          <span class="success-close">&times;</span>
+          <p class="success">Successfull!</p>
+        </div>
+      </div>      
+    </section>
+    <h1>Welcome to the most reliable Bank!</h1>
+    <script src="script.js"></script>
+  </body>
+</html>
 
