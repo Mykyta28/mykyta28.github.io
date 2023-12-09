@@ -1,0 +1,550 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 60%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(beach-1751455.jpg);
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+
+body h1{
+  text-align: center;
+  color: white;
+  margin-top: 20%;
+  font-size: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.welcome {
+  font-size: 4rem;
+  font-weight: 500;
+  border: 1px solid;
+  padding: 5px;
+  font-family: cursive;
+  border-radius: 70px;
+  width: 150px;
+  text-align: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  color: white;
+}
+
+.logo {
+  height: 7rem;
+}
+
+.login {
+  display: flex;
+  display: none;
+}
+
+.login-buttons{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.btn-style {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn-style:active,
+.btn-style:hover {
+  outline: 0;
+}
+
+.btn-style span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.btn-style:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .btn-style {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.log-out {
+  display: none;
+}
+
+.login__input {
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  font-family: inherit;
+  text-align: center;
+  width: 12rem;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  color: inherit;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.login__input:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.login__input::placeholder {
+  color: rgb(105, 105, 105);
+}
+
+.login__btn {
+  border: none;
+  background: none;
+  font-size: 2.2rem;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login__btn:hover,
+.login__btn:focus,
+.btn--sort:hover,
+.btn--sort:focus {
+  outline: none;
+  color: rgb(105, 105, 105);
+}
+
+/* Main */
+.app {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  gap: 2rem;
+  display: none;
+  transition: all 1s;
+}
+
+.info-button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid 3px gray;
+  font-size: 40px;
+  background-color: #007bff;
+  font-family: emoji;
+  cursor: pointer;
+  transition: color .2s;
+}
+
+.info-button:hover{
+  background-color: #298df9;
+}
+
+.balance {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.balance__label {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: -0.2rem;
+  color: white
+}
+
+.balance__date {
+  font-size: 1.4rem;
+  color: whitesmoke
+}
+
+.balance__value {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+/* Transactions */
+.transactions {
+  grid-row: 2 / span 3;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.transactions__row {
+  padding: 2.25rem 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.transactions__type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+}
+
+.transactions__date {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(86, 86, 86);
+}
+
+.transactions__type--deposit {
+  background-image: linear-gradient(to top left, #399bb3, #72d6e4);
+}
+
+.transactions__type--withdrawal {
+  background-image: linear-gradient(to top left, #f07b0d, #ca7e1a);
+}
+
+.transactions__value {
+  font-size: 1.8rem;
+  margin-left: auto;
+}
+
+/* Total */
+.total {
+  grid-row: 5 / 6;
+  display: flex;
+  align-items: baseline;
+  padding: 0 0.3rem;
+  margin-top: 1rem;
+}
+
+.total__label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 0.8rem;
+}
+
+.total__value {
+  font-size: 2.2rem;
+  margin-right: 2.5rem;
+}
+
+.total__value--in,
+.total__value--interest {
+  color: #399bb3;
+}
+
+.total__value--out {
+  color: #f07b0d;
+}
+
+.btn--sort {
+  margin-left: auto;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Operations */
+.operation {
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: #333;
+}
+
+.operation--transfer {
+  background-image: linear-gradient(to top left, #547202, #b7d433);
+}
+
+.operation--loan {
+  background-image: linear-gradient(to top left, #068394, #40dad2);
+}
+
+.operation--close {
+  background-image: linear-gradient(to top left, #e93c07, #d36c71);
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1rem;
+}
+
+/* Exceptions for interest */
+.form.form--loan {
+  grid-template-columns: 2.5fr 1fr 2.5fr;
+}
+.form__label--loan {
+  grid-row: 2;
+}
+/* End of exceptions */
+
+.form__input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form__label {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.form__btn {
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 2.8rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form__btn:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logout-timer {
+  margin-top: -1rem;
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+.timer {
+  font-weight: 600;
+}
+
+.register{
+  margin-top: 25px;
+  display: none;
+  transition: all 1s;
+}
+
+.register h2{
+  text-align: center;
+}
+
+/* Basic styling for the form */
+.registration-form {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: linear-gradient(144deg,#996eb9, #382c84 50%,#50c6ce);
+  color: white;
+}
+
+/* Style labels and inputs */
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reg-header{
+  color: white;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="date"],
+.registration-form select,
+.registration-form input[type="tel"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form input[type="checkbox"] {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.registration-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color;
+}
+
+.registration-form button:hover{
+  background-color: #298df9;
+}
+
+/* Style the checkbox label */
+.registration-form label input[type="checkbox"] {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Updated CSS for gender selection in the same row */
+.registration-form .gender-selection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.registration-form .gender-selection input[type="radio"] {
+  margin-right: -70px;
+}
+
+.rull-agreements {
+  display: grid;
+  grid-template-columns: .5fr 3.5fr;
+}
+
+.registration-form label {
+  font-size: 14px;
+}
+
+/* CSS for the modal container */
+.info-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* CSS for modal content */
+.content-info {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  line-height: 1.5;
+  font-size: large;
+  border-radius: 1rem;
+}
+
+/* CSS for close button */
+.info-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.info-close:hover,
+.info-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.success{
+  color: #5fda5f
+}
+
+.success-modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-success{
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  line-height: 1.5;
+  font-size: large;
+  border-radius: 1rem;
+}
+
+.success-close{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.success-close:hover,
+.success-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* CSS */
