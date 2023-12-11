@@ -515,11 +515,11 @@ buttonLogin.addEventListener("click", () => {
 //     }
 // };
 
-/**
- * User registration via AJAX
- * @param {number} id
- * @param {number} summ
- */
+// /**
+//  * User registration via AJAX
+//  * @param {number} id
+//  * @param {number} summ
+//  */
 // const userTransferMoney = (id, summ) => {
 //     const url = `http://localhost/transaction/${id}`;
 
@@ -548,7 +548,6 @@ buttonLogin.addEventListener("click", () => {
 //         });
 // };
 
-//Check validation by clicking on register button
 formRegistration.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -587,6 +586,7 @@ formRegistration.addEventListener("submit", (e) => {
     // User registration logic (if applicable) can be placed here
 });
 
+
 //Check validation by clicking on register button
 // formRegistration.addEventListener("submit", (e) => {
 //     e.preventDefault();
@@ -623,12 +623,9 @@ formRegistration.addEventListener("submit", (e) => {
 //         } else {
 //             removeBorder(input);
 //         }
-//         formRegistration.reset();
-//         registrationContainer.style.display = 'none';
-//         successModalWindow.style.display = 'block'
 //     });
 //     //userRegistration();
-    
+//     formRegistration.reset();
 // });
 
 // Event listeners for input fields
