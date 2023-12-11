@@ -1,3 +1,5 @@
+//READ readME file first!!!
+
 "use strict";
 // Simply Bank App
 
