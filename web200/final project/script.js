@@ -475,17 +475,24 @@ buttonLogin.addEventListener("click", () => {
     containerRegister.style.display = "none";
 });
 
-/**
- * User registration via AJAX
- * @param {number} id
- */
-// const userRegistration = () => {
-//     const url = "http://localhost/api/users";
 
-//     fetch(url, {
-//         method: "POST",
-//         body: new URLSearchParams(new FormData(formRegistration)),
-//     })
+// const userRegistration = () => {
+//     const formInputs = inputs;
+//     let formFilled = true;
+
+//     formInputs.forEach((input) => {
+//         if (input.value.trim() === '') {
+//             formFilled = false;
+//         }
+//     });
+
+//     if (formFilled) {
+//         const url = "http://localhost/api/users";
+
+//         fetch(url, {
+//             method: "POST",
+//             body: new URLSearchParams(new FormData(formRegistration)),
+//         })
 //         .then((response) => {
 //             if (!response.ok) {
 //                 throw new Error("Network response was not okay");
@@ -495,14 +502,17 @@ buttonLogin.addEventListener("click", () => {
 //         .then((data) => {
 //             console.log(data);
 //             console.log("successful registration!");
-//             infoModalWindow.style.display = "block"
+//             // Display success message or modal here
+//             successModalWindow.style.display = "block";
+//             registrationContainer.style.display = 'none';
 //         })
 //         .catch((error) => {
-//             console.error(
-//                 "There was a problem with the fetch operation: ",
-//                 error
-//             );
+//             console.error("There was a problem with the fetch operation: ", error);
 //         });
+//     } else {
+//         // Display a message indicating that all fields need to be filled out
+//         console.log("Please fill out all fields");
+//     }
 // };
 
 /**
@@ -575,9 +585,10 @@ formRegistration.addEventListener("submit", (e) => {
             removeBorder(input);
         }
     });
-    userRegistration();
+    //userRegistration();
     formRegistration.reset();
     registrationContainer.style.display = 'none';
+    successModalWindow.style.display = 'block'
 });
 
 // Event listeners for input fields
