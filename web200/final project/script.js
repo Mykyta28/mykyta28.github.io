@@ -552,45 +552,84 @@ buttonLogin.addEventListener("click", () => {
 formRegistration.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    let formFilled = true; // Assume form is filled until proven otherwise
+
     inputs.forEach((input) => {
         const value = input.value.trim();
         const regExPattern = getRegExPattern(input.id);
 
-        let valid = false;
-
         if (value === "") {
             input.style.border = "1px solid red";
             errorMessage(input, `${upperCaseLetter(input)} cannot be empty`);
-            valid = false;
+            formFilled = false; // If any field is empty, set formFilled to false
         } else if (regExPattern) {
             const regex = new RegExp(regExPattern);
             if (!regex.test(value)) {
                 input.style.border = "1px solid red";
                 errorMessage(input, `${upperCaseLetter(input)} is invalid`);
-                valid = false;
+                formFilled = false; // If any field fails validation, set formFilled to false
             } else {
-                input.style.border = "";
-                if (
-                    document.getElementById("password").value ===
-                    document.getElementById("confirmPassword").value
-                ) {
-                    input.style.border = "1px solid green";
-                    console.log("matches");
-                } else {
-                    console.log("do not matches");
-                    input.style.border = "1px solid red";
-                }
+                removeBorder(input);
             }
-        } else {
-            removeBorder(input);
         }
-        formRegistration.reset();
-        registrationContainer.style.display = 'none';
-        successModalWindow.style.display = 'block'
     });
-    //userRegistration();
-    
+
+    if (formFilled) {
+        // If form is completely filled and valid, show the success modal and reset the form
+        containerRegister.style.display = 'none';
+        successModalWindow.style.display = 'block';
+        formRegistration.reset();
+    } else {
+        // If form is not completely filled or has errors, do not show the success modal
+        console.log("Form has errors or is incomplete. Please check all fields.");
+    }
+
+    // User registration logic (if applicable) can be placed here
 });
+
+//Check validation by clicking on register button
+// formRegistration.addEventListener("submit", (e) => {
+//     e.preventDefault();
+
+//     inputs.forEach((input) => {
+//         const value = input.value.trim();
+//         const regExPattern = getRegExPattern(input.id);
+
+//         let valid = false;
+
+//         if (value === "") {
+//             input.style.border = "1px solid red";
+//             errorMessage(input, `${upperCaseLetter(input)} cannot be empty`);
+//             valid = false;
+//         } else if (regExPattern) {
+//             const regex = new RegExp(regExPattern);
+//             if (!regex.test(value)) {
+//                 input.style.border = "1px solid red";
+//                 errorMessage(input, `${upperCaseLetter(input)} is invalid`);
+//                 valid = false;
+//             } else {
+//                 input.style.border = "";
+//                 if (
+//                     document.getElementById("password").value ===
+//                     document.getElementById("confirmPassword").value
+//                 ) {
+//                     input.style.border = "1px solid green";
+//                     console.log("matches");
+//                 } else {
+//                     console.log("do not matches");
+//                     input.style.border = "1px solid red";
+//                 }
+//             }
+//         } else {
+//             removeBorder(input);
+//         }
+//         formRegistration.reset();
+//         registrationContainer.style.display = 'none';
+//         successModalWindow.style.display = 'block'
+//     });
+//     //userRegistration();
+    
+// });
 
 // Event listeners for input fields
 inputs.forEach((input) => {
