@@ -18,4 +18,6 @@ Everithing you do, you can do using user initials (Cecil Ireland = "ci").
 Please, do not judje so hurd, yes I know it's kind of shitty :)) code from pro/comercial side. I just did not know how to make 1 page app using JS
 in another way... Sorry.
 
+For registration I used fetch request, I have back end and localhost. Since we're learning JS I've commented so that I won't get an error but anyway you can see that I have knowledge of it and if thre would be given back end I could’ve applyed my fetch.
+
 Thank you!
