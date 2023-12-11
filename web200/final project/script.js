@@ -584,11 +584,12 @@ formRegistration.addEventListener("submit", (e) => {
         } else {
             removeBorder(input);
         }
+        formRegistration.reset();
+        registrationContainer.style.display = 'none';
+        successModalWindow.style.display = 'block'
     });
     //userRegistration();
-    formRegistration.reset();
-    registrationContainer.style.display = 'none';
-    successModalWindow.style.display = 'block'
+    
 });
 
 // Event listeners for input fields
