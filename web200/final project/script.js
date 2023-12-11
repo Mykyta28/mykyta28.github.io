@@ -582,6 +582,8 @@ formRegistration.addEventListener("submit", (e) => {
         // If form is not completely filled or has errors, do not show the success modal
         console.log("Form has errors or is incomplete. Please check all fields.");
     }
+
+    // User registration logic (if applicable) can be placed here
 });
 
 
