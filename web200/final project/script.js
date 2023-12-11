@@ -479,64 +479,64 @@ buttonLogin.addEventListener("click", () => {
  * User registration via AJAX
  * @param {number} id
  */
-const userRegistration = () => {
-    const url = "http://localhost/api/users";
+// const userRegistration = () => {
+//     const url = "http://localhost/api/users";
 
-    fetch(url, {
-        method: "POST",
-        body: new URLSearchParams(new FormData(formRegistration)),
-    })
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Network response was not okay");
-            }
-            return response.json();
-        })
-        .then((data) => {
-            console.log(data);
-            console.log("successful registration!");
-            infoModalWindow.style.display = "block"
-        })
-        .catch((error) => {
-            console.error(
-                "There was a problem with the fetch operation: ",
-                error
-            );
-        });
-};
+//     fetch(url, {
+//         method: "POST",
+//         body: new URLSearchParams(new FormData(formRegistration)),
+//     })
+//         .then((response) => {
+//             if (!response.ok) {
+//                 throw new Error("Network response was not okay");
+//             }
+//             return response.json();
+//         })
+//         .then((data) => {
+//             console.log(data);
+//             console.log("successful registration!");
+//             infoModalWindow.style.display = "block"
+//         })
+//         .catch((error) => {
+//             console.error(
+//                 "There was a problem with the fetch operation: ",
+//                 error
+//             );
+//         });
+// };
 
 /**
  * User registration via AJAX
  * @param {number} id
  * @param {number} summ
  */
-const userTransferMoney = (id, summ) => {
-    const url = `http://localhost/transaction/${id}`;
+// const userTransferMoney = (id, summ) => {
+//     const url = `http://localhost/transaction/${id}`;
 
-    fetch(url, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ summ }),
-    })
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Network response was not okay");
-            }
-            return response.json();
-        })
-        .then((data) => {
-            console.log(data);
-            console.log("successful registration!");
-        })
-        .catch((error) => {
-            console.error(
-                "There was a problem with the fetch operation: ",
-                error
-            );
-        });
-};
+//     fetch(url, {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify({ summ }),
+//     })
+//         .then((response) => {
+//             if (!response.ok) {
+//                 throw new Error("Network response was not okay");
+//             }
+//             return response.json();
+//         })
+//         .then((data) => {
+//             console.log(data);
+//             console.log("successful registration!");
+//         })
+//         .catch((error) => {
+//             console.error(
+//                 "There was a problem with the fetch operation: ",
+//                 error
+//             );
+//         });
+// };
 
 //Check validation by clicking on register button
 formRegistration.addEventListener("submit", (e) => {
