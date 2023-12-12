@@ -1,4 +1,5 @@
-//READ readME file first!!!
+// READ readMe file FIRST!!!
+
 
 "use strict";
 // Simply Bank App
@@ -12,6 +13,18 @@ const account1 = {
     pin: 1111,
     email: "cecil-i@gmail.com",
     tel: "+1 (224)-345-1121",
+    transactionsDates: [
+        '2020-10-02T14:43:31.074Z',
+        '2020-10-29T11:24:19.761Z',
+        '2020-11-15T10:45:23.907Z',
+        '2021-01-22T12:17:46.255Z',
+        '2021-02-12T15:14:06.486Z',
+        '2021-03-09T11:42:26.371Z',
+        '2021-10-09T07:43:59.331Z',
+        '2021-10-11T15:21:20.814Z',
+      ],
+      currency: 'USD',
+      locale: 'en-US',
 };
 
 const account2 = {
@@ -22,6 +35,18 @@ const account2 = {
     pin: 2222,
     email: "amani-s@gmail.com",
     tel: "+1 (530)-235-1723",
+    transactionsDates: [
+        '2020-10-02T14:43:31.074Z',
+        '2020-10-29T11:24:19.761Z',
+        '2020-11-15T10:45:23.907Z',
+        '2021-01-22T12:17:46.255Z',
+        '2021-02-12T15:14:06.486Z',
+        '2021-03-09T11:42:26.371Z',
+        '2021-05-21T07:43:59.331Z',
+        '2021-06-22T15:21:20.814Z',
+      ],
+      currency: 'UAH',
+      locale: 'uk-UA',
 };
 
 const account3 = {
@@ -32,6 +57,18 @@ const account3 = {
     pin: 3333,
     email: "corey-m@hotmail.com",
     tel: "+1 (847)-903-7465",
+    transactionsDates: [
+        '2020-10-02T14:43:31.074Z',
+        '2020-10-29T11:24:19.761Z',
+        '2020-11-15T10:45:23.907Z',
+        '2021-01-22T12:17:46.255Z',
+        '2021-02-12T15:14:06.486Z',
+        '2021-03-09T11:42:26.371Z',
+        '2021-05-21T07:43:59.331Z',
+        '2021-06-22T15:21:20.814Z',
+      ],
+      currency: 'RUB',
+      locale: 'ru-RU',
 };
 
 const account4 = {
@@ -42,6 +79,15 @@ const account4 = {
     pin: 4444,
     email: "kamile-s@gmail.com",
     tel: "+1 (847)-000-1234",
+    transactionsDates: [
+        '2020-10-02T14:43:31.074Z',
+        '2020-10-29T11:24:19.761Z',
+        '2020-11-15T10:45:23.907Z',
+        '2021-01-22T12:17:46.255Z',
+        '2021-02-12T15:14:06.486Z',
+      ],
+      currency: 'EUR',
+      locale: 'fr-CA',
 };
 
 const account5 = {
@@ -52,6 +98,15 @@ const account5 = {
     pin: 5555,
     email: "oliver-a@gmail.com",
     tel: "+1 (224)-475-7632",
+    transactionsDates: [
+        '2020-10-02T14:43:31.074Z',
+        '2020-10-29T11:24:19.761Z',
+        '2020-11-15T10:45:23.907Z',
+        '2021-01-22T12:17:46.255Z',
+        '2021-02-12T15:14:06.486Z',
+      ],
+      currency: 'USD',
+      locale: 'en-US',
 };
 
 const accounts = [account1, account2, account3, account4, account5];
@@ -91,7 +146,7 @@ const inputLoanAmount = document.querySelector(".form__input--loan-amount"); //i
 const inputCloseUsername = document.querySelector(".form__input--user"); // input for close account -> username
 const inputClosePin = document.querySelector(".form__input--pin"); //input for close account -> pin code
 
-const transactionDate = document.querySelector(".transactions__date"); // transaction date
+//const transactionDate = document.querySelector(".transactions__date"); // transaction date
 
 const registrationContainer = document.querySelector('.register'); // registration section
 const formRegistration = document.querySelector(".registration-form"); // my registration form
@@ -136,44 +191,31 @@ createNickNames(accounts);
 //---------------------------------------------------------------------------
 
 //displaying transactions
-const displayTransactions = (transactions, sort = false) => {
-    const givenDate = new Date("11/15/2023");
-
-    const currentDate = new Date();
-    const differenceInTime = currentDate.getTime() - givenDate.getTime();
-
-    // Calculate the time difference in days, hours, or minutes
-    const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
-    const differenceInHours = Math.floor(differenceInTime / (1000 * 3600));
-    const differenceInMinutes = Math.floor(differenceInTime / (1000 * 60));
-
-    let timeAgo;
-
-    if (differenceInDays > 2) {
-        timeAgo = `${differenceInDays} days ago`;
-    } else if (differenceInDays === 1) {
-        timeAgo = "1 day ago";
-    } else if (differenceInHours > 1) {
-        timeAgo = `${differenceInHours} hours ago`;
-    } else {
-        timeAgo = `${differenceInMinutes} minutes ago`;
-    }
+const displayTransactions = (account, sort = false) => {
 
     containerTransactions.innerHTML = "";
 
     const transacs = sort
-        ? transactions.slice().sort((x, y) => x - y)
-        : transactions;
+        ? account.transactions.slice().sort((x, y) => x - y)
+        : account.transactions;
 
     transacs.forEach((trans, index) => {
         const transType = trans > 0 ? "deposit" : "withdrawal";
 
+        const date = new Date(account.transactionsDates[index])
+
+        const month = `${date.getMonth() + 1}`.padStart(2, '0');
+        const day = `${date.getDate()}`.padStart(2, '0');
+        const year =  date.getFullYear();
+        const tansDate = `${month}/${day}/${year}`;
+
         const transactionRow = `
-    <div class="transactions__row">
+        <div class="transactions__row">
           <div class="transactions__type transactions__type--${transType}">
             ${index + 1} ${transType}
           </div>
-          <div class="transactions__date">${timeAgo}</div>
+          <div class="transactions__date">${tansDate}</div>
+          
           <div class="transactions__value">${trans}$</div>
         </div>
     `;
@@ -230,6 +272,9 @@ const transferMoney = () => {
         currentAccount.transactions.push(-transferAmount);
         recipientAccount.transactions.push(transferAmount);
 
+        currentAccount.transactionsDates.push(new Date().toISOString());
+        recipientAccount.transactionsDates.push(new Date().toISOString());
+
         // Update the transactions in localStorage for both accounts
         localStorage.setItem("loggedInUser", JSON.stringify(currentAccount));
 
@@ -258,6 +303,7 @@ const takeLoan = () => {
         currentAccount.transactions.some((trans) => trans >= loanAmount * 0.1)
     ) {
         currentAccount.transactions.push(loanAmount);
+        currentAccount.transactionsDates.push(new Date().toISOString())
 
         // Update the transactions in localStorage for the current account
         localStorage.setItem("loggedInUser", JSON.stringify(currentAccount));
@@ -270,7 +316,7 @@ const takeLoan = () => {
 
 //Updating UI
 const updateUI = (account) => {
-    displayTransactions(account.transactions);
+    displayTransactions(account);
     displayBalance(account);
     displayTotal(account);
 };
@@ -299,7 +345,7 @@ function auth() {
 let currentAccount = JSON.parse(localStorage.getItem("loggedInUser"));
 if (currentAccount) {
     auth();
-    displayTransactions(currentAccount.transactions);
+    displayTransactions(currentAccount);
     displayBalance(currentAccount);
     displayTotal(currentAccount);
     takeLoan();
@@ -458,7 +504,7 @@ btnSort.addEventListener("click", (e) => {
     e.preventDefault();
 
     sorted = !sorted;
-    displayTransactions(currentAccount.transactions, !sorted);
+    displayTransactions(currentAccount, !sorted);
 });
 //--------------------------------------------------------------------------
 
@@ -477,6 +523,7 @@ buttonLogin.addEventListener("click", () => {
     containerRegister.style.display = "none";
 });
 
+// My FETCH
 
 // const userRegistration = () => {
 //     const formInputs = inputs;
