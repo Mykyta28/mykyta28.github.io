@@ -1,5 +1,4 @@
-// READ readMe file FIRST!!!
-
+// READ readME file first!!!
 
 "use strict";
 // Simply Bank App
@@ -215,7 +214,6 @@ const displayTransactions = (account, sort = false) => {
             ${index + 1} ${transType}
           </div>
           <div class="transactions__date">${tansDate}</div>
-          
           <div class="transactions__value">${trans}$</div>
         </div>
     `;
@@ -523,7 +521,6 @@ buttonLogin.addEventListener("click", () => {
     containerRegister.style.display = "none";
 });
 
-// My FETCH
 
 // const userRegistration = () => {
 //     const formInputs = inputs;
@@ -635,6 +632,8 @@ formRegistration.addEventListener("submit", (e) => {
     // User registration logic (if applicable) can be placed here
 });
 
+
+//My FETCH
 
 //Check validation by clicking on register button
 // formRegistration.addEventListener("submit", (e) => {
