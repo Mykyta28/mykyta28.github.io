@@ -114,8 +114,8 @@ const userTel = document.querySelector(".tel");
 const success = document.querySelector('.success');
 
 //Getting today's date
-const month = new Date().getMonth() + 1;
-const day = new Date().getDate();
+const month = `${new Date().getMonth() + 1}`.padStart(2, '0');
+const day = `${new Date().getDate()}`.padStart(2, '0');
 const year = new Date().getFullYear();
 const date = `${month}/${day}/${year}`;
 labelDate.textContent = date;
