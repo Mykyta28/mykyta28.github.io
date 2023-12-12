@@ -2,6 +2,8 @@ Hello Michael!
 I'm Mykyta Semenii.
 I have created "SimpleBank" app, it is very simple bank :) (maybe I'll continue developing this app but with react help :)) )
 
+Please do "Empty cash and Hard Reload" (Maybe even clear local storage in browser) before you start, I have done few commits after I sent the link to you -> !!!!!!!!!!!
+
 My app has a functionality such as:
 
 1) Log in to the app
