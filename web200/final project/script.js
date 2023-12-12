@@ -201,7 +201,7 @@ const displayTransactions = (account, sort = false) => {
     transacs.forEach((trans, index) => {
         const transType = trans > 0 ? "deposit" : "withdrawal";
 
-        const date = new Date(account.transactionsDates[index])
+        
 
         const month = `${date.getMonth() + 1}`.padStart(2, '0');
         const day = `${date.getDate()}`.padStart(2, '0');
