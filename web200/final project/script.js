@@ -493,7 +493,7 @@ btnClose.addEventListener("click", (e) => {
         labelWelcome.style.fontFamily = "cursive";
         btnLogout.style.display = "none";
         logSignButtons.style.display = "flex";
-
+        greeting.style.display = "block";
         inputCloseUsername.value = "";
         inputClosePin.value = "";
     }
