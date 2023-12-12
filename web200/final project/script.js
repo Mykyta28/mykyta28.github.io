@@ -1,5 +1,3 @@
-// READ readME file first!!!
-
 "use strict";
 // Simply Bank App
 
@@ -201,7 +199,7 @@ const displayTransactions = (account, sort = false) => {
     transacs.forEach((trans, index) => {
         const transType = trans > 0 ? "deposit" : "withdrawal";
 
-        
+        const date = new Date(account.transactionsDates[index])
 
         const month = `${date.getMonth() + 1}`.padStart(2, '0');
         const day = `${date.getDate()}`.padStart(2, '0');
@@ -214,6 +212,7 @@ const displayTransactions = (account, sort = false) => {
             ${index + 1} ${transType}
           </div>
           <div class="transactions__date">${tansDate}</div>
+          
           <div class="transactions__value">${trans}$</div>
         </div>
     `;
@@ -632,8 +631,6 @@ formRegistration.addEventListener("submit", (e) => {
     // User registration logic (if applicable) can be placed here
 });
 
-
-//My FETCH
 
 //Check validation by clicking on register button
 // formRegistration.addEventListener("submit", (e) => {
