@@ -486,6 +486,11 @@ btnClose.addEventListener("click", (e) => {
         accounts.splice(currentAccountIndex, 1);
         containerApp.style.display = "none";
         labelWelcome.textContent = "Simple";
+        labelWelcome.style.border = "solid 1px white"
+        labelWelcome.style.backgroundImage =
+        "linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB)";
+        labelWelcome.style.width = "150px";
+        labelWelcome.style.fontFamily = "cursive";
         btnLogout.style.display = "none";
         logSignButtons.style.display = "flex";
 
