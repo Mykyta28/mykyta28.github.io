@@ -418,6 +418,7 @@ const closeSuccessModal = () => {
 // On click "Log In" button open log in form
 buttonLogin.addEventListener("click", () => {
     formLogIn.style.display = "flex";
+    inputLoginUsername.focus()
 });
 
 // Enter to the app
