@@ -11,9 +11,9 @@ const account1 = {
     email: "cecil-i@gmail.com",
     tel: "+1 (224)-345-1121",
     transactionsDates: [
-        '2023-10-02T14:43:31.074Z',
-        '2023-10-29T11:24:19.761Z',
-        '2023-11-15T10:45:23.907Z',
+        '2023-12-10T14:43:31.074Z',
+        '2023-12-13T11:24:19.761Z',
+        '2023-12-14T10:45:23.907Z',
         '2023-01-22T12:17:46.255Z',
         '2023-02-12T15:14:06.486Z',
         '2023-03-09T11:42:26.371Z',
@@ -165,12 +165,6 @@ const userEmail = document.querySelector(".email");
 const userTel = document.querySelector(".tel");
 const success = document.querySelector('.success');
 
-//Getting today's date
-const month = `${new Date().getMonth() + 1}`.padStart(2, '0');
-const day = `${new Date().getDate()}`.padStart(2, '0');
-const year = new Date().getFullYear();
-const date = `${month}/${day}/${year}`;
-labelDate.textContent = date;
 
 //All my functions
 
@@ -187,6 +181,29 @@ const createNickNames = (accs) => {
 createNickNames(accounts);
 //---------------------------------------------------------------------------
 
+//Date
+const formattedDate = (date, locale) => {
+    
+    const getAmountOfDayTransactions = (date1, date2) => {
+        return Math.round(Math.abs((date1 - date2) / (1000 * 60 * 60 * 24)))
+    }
+
+    const dayPassed = getAmountOfDayTransactions(new Date(), date);
+
+    if(dayPassed === 0){
+        return 'Today'
+    }
+    if(dayPassed === 1){
+        return 'Yestarday'
+    }
+    if(dayPassed <= 5){
+        return `${dayPassed} days ago`
+    }
+
+    return Intl.DateTimeFormat(locale).format(date)
+}
+//---------------------------------------------------------------------------
+
 //displaying transactions
 const displayTransactions = (account, sort = false) => {
 
@@ -200,11 +217,8 @@ const displayTransactions = (account, sort = false) => {
         const transType = trans > 0 ? "deposit" : "withdrawal";
 
         const date = new Date(account.transactionsDates[index])
-
-        const month = `${date.getMonth() + 1}`.padStart(2, '0');
-        const day = `${date.getDate()}`.padStart(2, '0');
-        const year =  date.getFullYear();
-        const tansDate = `${month}/${day}/${year}`;
+        
+        const tansDate = formattedDate(date, account.locale)
 
         const transactionRow = `
         <div class="transactions__row">
@@ -420,6 +434,18 @@ btnLogin.addEventListener("click", (e) => {
         inputLoginUsername.value = "";
         inputLoginPin.value = "";
         inputLoginPin.blur();
+
+        //Getting today's date
+        const todayDate = new Date();
+        const options = {
+            hour: 'numeric',
+            minute: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+        }
+        
+        labelDate.textContent = Intl.DateTimeFormat(currentAccount.locale, options).format(todayDate);
 
         updateUI(currentAccount);
 
