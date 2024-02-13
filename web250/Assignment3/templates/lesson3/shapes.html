@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lesson 3</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        p {
+            min-height: 1em;
+        }
+    </style>
+</head>
+  <body>
+    <h1>Area of plane shapes</h1>
+    <form method="POST" action="/lesson3/shapes-post">
+        <p>
+            <label for="square">Enter side of the square:</label>
+            <input type="text" id="square" name="side">
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+    
+    <p>
+        <output>{{area}}</output>
+    </p>
+
+    <button class="back-button" onclick="goBack()">⬅️ Back</button>
+
+    <script>
+        function goBack() {
+            
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

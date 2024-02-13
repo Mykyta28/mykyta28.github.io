@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <hi>{{greeting}}</hi>
+    <div class="wrapper">
+        <p><br>First name: {{firstName}}<br>Last name: {{lastName}}<br>Speciality: {{employment}}</p>
+    </div>
+
+    <button class="back-button" onclick="goBack()">⬅️ Back</button>
+    
+    <script>
+      function goBack() {
+          
+          window.location.href = 'http://localhost:3000/lesson2';
+      }
+    </script>
+  </body>
+</html>

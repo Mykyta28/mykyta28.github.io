@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>BMI</title>
+</head>
+<body>
+    <h1>BMI Calculation</h1>
+    <form method="POST" action="/lesson3/BMI-post">
+        <div>
+            <label for="weight">Enter weight of your body:</label>
+            <input type="text" id="weight" name="weight">
+            <br>
+            <label for="height">Enter height of your body:</label>
+            <input type="text" id="height" name="height">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <p>
+        <output>{{bmi}}</output>
+    </p>
+
+    <button class="back-button" onclick="goBack()">⬅️ Back</button>
+
+    <script>
+        function goBack() {
+            
+            window.history.back();
+        }
+    </script>     
+</body>
+</html>
