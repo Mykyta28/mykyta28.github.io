@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Server Information</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
     <h1>Server Information</h1>
     <p>Current Date and Time: {{currentDate}}</p>
     <p>Hostname: {{hostname}}</p>
@@ -14,12 +14,11 @@
     <p>Node.js Version: {{nodeVersion}}</p>
 
     <button class="back-button" onclick="goBack()">⬅️ Back</button>
-    
+
     <script>
       function goBack() {
-          
-          window.location.href = 'http://localhost:3000/lesson2';
+        window.history.back();
       }
-  </script>
-</body>
+    </script>
+  </body>
 </html>

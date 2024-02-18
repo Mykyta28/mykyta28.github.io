@@ -1,8 +1,7 @@
 const express = require("express");
-const fs = require("fs");
-const handlebars = require('handlebars');
 const router = express.Router();
 const app = express();
+const {buildResponse} = require('../helpers/view')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -40,9 +39,4 @@ router.post('/BMI-post', (req, res) => {
     }
     res.send(buildResponse('./templates/lesson3/BMI.html', { bmi: result }));
 })
-function buildResponse(path, data = {}) {
-    let source = fs.readFileSync(path);
-    let template = handlebars.compile(source.toString());
-    return template(data);
-}
 module.exports = router;

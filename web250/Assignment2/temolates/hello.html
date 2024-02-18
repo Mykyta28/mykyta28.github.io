@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Lesson 2</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <p>{{greeting}} lesson 2 {{name}}!</p>
@@ -14,12 +14,11 @@
     </ul>
 
     <button class="back-button" onclick="goBack()">⬅️ Back</button>
-    
+
     <script>
       function goBack() {
-          
-          window.location.href = 'http://localhost:3000/';
+        window.history.back();
       }
-  </script>
+    </script>
   </body>
 </html>

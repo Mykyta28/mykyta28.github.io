@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Contact Page</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="wrapper">
-        <p>Full name: {{fullName}}<br>Tell number: {{tel}}<br>E-mail: {{email}}<br>Address: {{address}}</p>
+      <p>
+        Full name: {{fullName}}<br />Tell number: {{tel}}<br />E-mail:
+        {{email}}<br />Address: {{address}}
+      </p>
     </div>
 
     <button class="back-button" onclick="goBack()">⬅️ Back</button>
-    
+
     <script>
       function goBack() {
-          
-          window.location.href = 'http://localhost:3000/lesson2';
+        window.history.back();
       }
     </script>
   </body>

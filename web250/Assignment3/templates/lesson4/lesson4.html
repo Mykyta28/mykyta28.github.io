@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lesson 4 | Math Game</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <h1>Math Game</h1>
+    <div id="game-container">
+      {{#unless expressionsConfig}}
+      <form id="generateForm" method="POST" action="/lesson4">
+        <p>
+          <label for="value">Enter a value:</label>
+          <input type="number" id="value" name="value" />
+        </p>
+        <p>
+          <label for="expression-quantity"
+            >Enter quantity of expressions:</label
+          >
+          <input
+            type="number"
+            id="expression-quantity"
+            name="expression-quantity"
+          />
+        </p>
+        <p>
+          <button type="submit" name="submit" value="generate">Confirm</button>
+          <button class="back-button">⬅️ Back</button>
+        </p>
+      </form>
+      {{/unless}} {{#if expressionsConfig}}
+      <form id="startForm" method="POST" action="/lesson4">
+        <input type="hidden" name="left" value="{{expressionsConfig.left}}" />
+        {{#each expressionsConfig.rights}}
+        <p class="expression">
+          <span class="left">{{../expressionsConfig.left}}</span>
+          <span class="operation">+</span>
+          <span class="right">{{.}}</span>
+          <span class="equals">=</span>
+          <input type="hidden" name="rights[]" value="{{.}}" />
+          <input type="number" class="result" name="results[]" />
+        </p>
+        {{/each}}
+        <p>
+          <button type="submit" name="submit" value="start">Start</button>
+        </p>
+      </form>
+      <button
+        id="new-game"
+        style="display: none"
+        onclick="window.location = '/lesson4'"
+      >
+        New game
+      </button>
+      {{/if}}
+    </div>
+    <script src="/js/lesson4/script.js"></script>
+  </body>
+</html>

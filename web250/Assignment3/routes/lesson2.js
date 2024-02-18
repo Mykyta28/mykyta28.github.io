@@ -4,7 +4,7 @@ const handlebars = require('handlebars');
 
 const router = express.Router()
 router.get("/", function (request, response) {
-    let source = fs.readFileSync("./templates/hello.html");
+    let source = fs.readFileSync("./templates/lesson2/hello.html");
     let template = handlebars.compile(source.toString());
     let data = {
         greeting: "Hello",
@@ -15,7 +15,7 @@ router.get("/", function (request, response) {
 });
 
 router.get("/about-me", function (request, response) {
-    let source = fs.readFileSync("./templates/about.html");
+    let source = fs.readFileSync("./templates/lesson2/about.html");
     let template = handlebars.compile(source.toString());
     let data = {
         greeting: "Hi!",
@@ -28,7 +28,7 @@ router.get("/about-me", function (request, response) {
 });
 
 router.get("/contact-info", function (request, response) {
-    let source = fs.readFileSync("./templates/contact.html");
+    let source = fs.readFileSync("./templates/lesson2/contact.html");
     let template = handlebars.compile(source.toString());
     let data = {
         fullName: "Mykyta Semenii",
@@ -41,7 +41,7 @@ router.get("/contact-info", function (request, response) {
 });
 
 router.get("/server", function (request, response) {
-    let source = fs.readFileSync("./templates/server.html");
+    let source = fs.readFileSync("./templates/lesson2/server.html");
     let template = handlebars.compile(source.toString());
     const serverInfo = {
         currentDate: new Date().toLocaleString(),
