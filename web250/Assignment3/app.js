@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const app = express();
+//const fileUpload = require("express-fileupload");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -12,7 +13,12 @@ app.use(
   })
 );
 
-// Map routes to all .js files in the /routes folder.
+/*app.use(
+  fileUpload({
+    limits: { fileSize: 5 * 1024 * 1024 },
+  })
+);*/
+
 fs.readdirSync("./routes").map((filename) => {
   const module = require("./routes/" + filename);
   const route = filename.replace(".js", "");

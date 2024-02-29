@@ -37,3 +37,29 @@ body {
 .success {
   border: 1px solid green;
 }
+
+/* Add your CSS styling here */
+.tsunami-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tsunami {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
+}
+
+.continent-asia {
+  background-color: #ffcccb; /* Light Coral */
+}
+
+.continent-europe {
+  background-color: #add8e6; /* Light Blue */
+}
+
+.continent-africa {
+  background-color: #90ee90; /* Light Green */
+}
+
+/* Add more continent classes and colors as needed */
