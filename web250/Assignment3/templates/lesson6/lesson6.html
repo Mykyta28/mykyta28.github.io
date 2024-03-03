@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload</title>
+  </head>
+  <body>
+    <h1>Arrays with Node.js</h1>
+
+    <form
+      id="myForm"
+      action="/lesson6/upload"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="earthquake">Upload file</label>
+      <input type="file" name="earthquake" id="earthquake" />
+      <button type="submit">Submit</button>
+    </form>
+    <div id="earthquake"></div>
+  </body>
+</html>
