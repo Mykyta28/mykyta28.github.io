@@ -1,3 +1,5 @@
 My website - http://test-env.eba-2akk8nny.us-east-2.elasticbeanstalk.com/
 
 In Lesson 7 assignment, I am gained practical experience in building a web application using Node.js and Express, focusing on handling file uploads and processing data. Specifically, I learned how to adapt the server-side code to parse JSON files instead of CSV files. This experience provided insights into server-side development, file handling, and data processing, enhancing your overall understanding of web development tools and practices.
+
+In Lesson 8 assignment, I actively engaged in constructing a web application with Node.js and Express, with a key emphasis on managing file uploads and manipulating data. Notably, I gained proficiency in modifying the server-side logic to handle JSON files, a departure from the usual CSV format. This hands-on encounter deepened my comprehension of server-side programming, file management intricacies, and the nuances of data processing. This practical experience significantly enriched my grasp of essential tools and methodologies in web development.
