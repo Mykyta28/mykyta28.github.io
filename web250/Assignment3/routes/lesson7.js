@@ -46,7 +46,7 @@ router.post("/upload", uploads.single("storm"), (req, res) => {
     html += "</table>";
     fs.unlink(req.file.path, () => {});
     res.send(html);
-    console.log(data);
+    //console.log(data);
   });
 });
 

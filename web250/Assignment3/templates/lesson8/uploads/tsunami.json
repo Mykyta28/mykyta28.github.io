@@ -1,0 +1,977 @@
+{
+  "head": {
+    "vars": ["Date", "Tsunami", "Continent", "Country"]
+  },
+  "results": {
+    "bindings": [
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "-0478-01-01T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Aegean tsunami of 479 BCE"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Greece"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Europe"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "-0372-01-01T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "373 BC Helike earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Greece"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Europe"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "0563-01-01T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Tauredunum event"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Switzerland"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Europe"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "0684-11-29T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "684 Hakuhō earthquake and tsunami"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Japan"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "0869-07-13T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "869 Jōgan earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Japan"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1343-01-01T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Tsunami of 1343, Naples"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Italy"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Europe"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1624-03-19T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "1624 Argenta earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Papal States"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Europe"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1657-03-15T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "1657 Concepción earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Chile"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "South America"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1677-11-04T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "1677 Bōsō earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Japan"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1764-02-11T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "1764 tsunami in Bristol, England"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Kingdom of Great Britain"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Europe"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1771-04-24T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "1771 Great Yaeyama Tsunami"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Ryukyu Kingdom"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1979-10-16T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "1979 Nice events"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "France"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Europe"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Indonesia"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Kenya"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Indonesia"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Insular Oceania"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "South Africa"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "India"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "France"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Europe"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Yemen"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Maldives"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Myanmar"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Thailand"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Malaysia"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Sri Lanka"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Comoros"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Madagascar"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Tanzania"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Bangladesh"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Mauritius"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Somalia"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Seychelles"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "French Southern and Antarctic Lands"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Chagos Archipelago"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Africa"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2004-12-26T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2004 Indian Ocean earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "French Southern and Antarctic Lands"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Antarctica"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2010-02-27T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2010 Chile earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Chile"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "South America"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2011-03-11T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2011 Tōhoku earthquake and tsunami"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Japan"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2011-03-11T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Aftermath of the 2011 Tōhoku earthquake and tsunami"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Japan"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2014-04-01T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2014 Iquique earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Peru"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "South America"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2014-04-01T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2014 Iquique earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Chile"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "South America"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2014-04-01T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2014 Iquique earthquake"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Bolivia"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "South America"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2018-09-28T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2018 Sulawesi earthquake and tsunami"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Indonesia"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2018-09-28T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2018 Sulawesi earthquake and tsunami"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Indonesia"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Insular Oceania"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2018-12-22T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2018 Sunda Strait tsunami"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Indonesia"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Asia"
+        }
+      },
+      {
+        "Date": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2018-12-22T00:00:00Z"
+        },
+        "Tsunami": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "2018 Sunda Strait tsunami"
+        },
+        "Country": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Indonesia"
+        },
+        "Continent": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Insular Oceania"
+        }
+      }
+    ]
+  }
+}
