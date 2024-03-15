@@ -1,0 +1,23 @@
+version: "2"
+services:
+  express-server:
+    container_name: express-server
+    restart: always
+    build: .
+    ports:
+      - "8080:3000"
+  mariadb-server:
+    container_name: mariadb-server
+    image: mariadb
+    ports:
+      - "3306:3306"
+  mongo-server:
+    container_name: mongo-server
+    image: mongo
+    ports:
+      - "27017:27017"
+  redis-server:
+    container_name: redis-server
+    image: redis
+    ports:
+      - "6379:6379"

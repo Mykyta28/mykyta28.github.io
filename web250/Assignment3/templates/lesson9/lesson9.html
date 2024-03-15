@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style9.css" />
+    <title>Database entries</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Insert Form -->
+      <form id="insert" action="lesson9/add-record" method="post">
+        <label for="event">Event:</label>
+        <input type="text" id="event" name="event" required />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+        <button type="submit">Insert</button>
+      </form>
+
+      <!-- Update Form -->
+      <form id="update" action="lesson9/update-record" method="post">
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id" required />
+        <label for="event">Event:</label>
+        <input type="text" id="event" name="event" required />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+        <button type="submit">Update</button>
+      </form>
+
+      <!-- Delete Form -->
+      <form id="delete" action="lesson9/delete-record" method="post">
+        <label for="id">ID to Delete:</label>
+        <input type="number" id="deleteId" name="id" required />
+        <button type="submit">Delete</button>
+      </form>
+
+      <!-- Show Form -->
+      <form id="show" action="lesson9/show-records" method="post">
+        <button type="submit">Show</button>
+      </form>
+    </div>
+  </body>
+</html>
