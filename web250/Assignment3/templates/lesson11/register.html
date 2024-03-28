@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/style11.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+        <div class="register-form">
+          <h2>Register</h2>
+          <form id="register" action="/lesson11/register" method="POST">
+            <div class="input-group">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                id="first-name"
+                name="firstName"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                id="last-name"
+                name="lastName"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password">Create a password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <button type="submit">Register</button>
+            
+          </form>
+          <div class="back-button">
+            <a href="/lesson11/login">Lon In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
