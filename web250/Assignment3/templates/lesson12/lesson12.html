@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style9.css" />
+    <title>Database entries</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Show Form -->
+      <form id="show" action="/lesson12/api/users" method="get">
+        <button type="submit">Show</button>
+      </form>
+
+      <!-- Insert Form -->
+      <form id="insert" action="/lesson12/api/users" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" name="lastName" required />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+        <button type="submit">Insert</button>
+      </form>
+
+      <!-- Update Form -->
+      <form id="update" action="/lesson12/api/users/:id" method="post">
+        <label for="id-update">ID:</label>
+        <input type="text" id="id-update" name="id" required />
+        <label for="name-update">Name:</label>
+        <input type="text" id="name-update" name="name" required />
+        <label for="last-name-update">Last name:</label>
+        <input type="text" id="last-name-update" name="lastName" required />
+        <label for="age-update">Age:</label>
+        <input type="number" id="age-update" name="age" required />
+        <button type="submit">Update</button>
+      </form>
+
+      <!-- Delete Form -->
+      <form id="delete" action="/lesson12/api/users/:id" method="post">
+        <label for="id-delete">ID:</label>
+        <input type="text" id="id-delete" name="id" required />
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+  </body>
+</html>
